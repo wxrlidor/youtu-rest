@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.youtu.mapper.TbItemCatMapper;
-import com.youtu.pojo.TbContentCategoryExample.Criteria;
 import com.youtu.pojo.TbItemCat;
 import com.youtu.pojo.TbItemCatExample;
 import com.youtu.rest.pojo.CatNode;
@@ -43,6 +42,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 		 * @param parentId
 		 * @return
 		 */
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		private List<?> getCatList(long parentId) {
 			//创建查询条件
 			TbItemCatExample example = new TbItemCatExample();

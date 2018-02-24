@@ -6,8 +6,6 @@ import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.youtu.common.utils.JsonUtils;
 import com.youtu.rest.pojo.CatResult;
 import com.youtu.rest.service.ItemCatService;
 
